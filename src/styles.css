@@ -21,18 +21,28 @@
   width: auto;
 }
 
+
+
+/* @media screen and (min-width: 1096px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+
+
+
 @media screen and (max-width: 1745px) {
   .container.is-fullhd {
     max-width: 1610px;
   }
 }
 
-@media screen and (min-width: 1096px) {
+@media screen and (min-width: 1288px) {
   .container {
-    max-width: 960px;
-  }
+    max-width: 1152px;
 }
-
+} */
 
 
 .default_container {
@@ -86,7 +96,7 @@
 
 .footer {
   width: 100%;
-  min-width: 1640px;
+  min-width: 1620px;
   color: #bfbfbf;
   background: #20202d;
   padding: 20px 0 37px;
