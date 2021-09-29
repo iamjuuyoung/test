@@ -7,27 +7,33 @@
   overflow: auto;
 }
 
-.container {
+.app-container {
   padding-top: 104px;
-  width: 1620px;
   position: relative;
   padding: 40px 0;
   min-height: calc(100vh - 80px);
 }
 
-.fullhd {
+.container {
   flex-grow: 1;
   margin: 0 auto;
   position: relative;
   width: auto;
-  display: block;
 }
 
 @media screen and (max-width: 1745px) {
-  .fullhd {
+  .container.is-fullhd {
     max-width: 1610px;
   }
 }
+
+@media screen and (min-width: 1096px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+
 
 .default_container {
   padding: 0 10px;
@@ -80,7 +86,7 @@
 
 .footer {
   width: 100%;
-  min-width: 1620px;
+  min-width: 1640px;
   color: #bfbfbf;
   background: #20202d;
   padding: 20px 0 37px;
