@@ -1,0 +1,87 @@
+#app {
+  position: relative;
+  height: calc(100% - 64px);
+  margin-top: 64px;
+  display: block;
+  background: #f7f7f7;
+  overflow: auto;
+}
+
+.container {
+  padding-top: 104px;
+  width: 1620px;
+  position: relative;
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+}
+
+.fullhd {
+  flex-grow: 1;
+  margin: 0 auto;
+  position: relative;
+  width: auto;
+  display: block;
+}
+
+@media screen and (max-width: 1745px) {
+  .fullhd {
+    max-width: 1610px;
+  }
+}
+
+.default_container {
+  padding: 0 10px;
+  width: 1620px;
+}
+
+.default_container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  width: 260px;
+  background: #292936;
+}
+
+.default_container::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.app_aside {
+  float: left;
+  position: relative;
+  width: 260px;
+  min-width: 260px;
+  vertical-align: top;
+  min-height: 930px;
+}
+
+.app_content {
+  float: left;
+  width: 1020px;
+  min-width: 1020px;
+  min-height: 930px;
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: green;
+}
+
+.app_banner {
+  float: left;
+  width: 300px;
+  min-width: 300px;
+  vertical-align: top;
+  background-color: blue;
+  min-height: 930px;
+}
+
+.footer {
+  width: 100%;
+  min-width: 1620px;
+  color: #bfbfbf;
+  background: #20202d;
+  padding: 20px 0 37px;
+}
