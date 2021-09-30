@@ -48,9 +48,10 @@
 .default_container {
   padding: 0 10px;
   width: 1620px;
+  display: flex;
 }
 
-.default_container::before {
+/* .default_container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -58,17 +59,18 @@
   left: 10px;
   width: 260px;
   background: #292936;
-}
+} */
 
-.default_container::after {
+/* .default_container::after {
   display: block;
   clear: both;
   content: "";
-}
+} */
 
 .app_aside {
-  float: left;
-  position: relative;
+  /* float: left; */
+  /* position: relative; */
+
   width: 260px;
   min-width: 260px;
   vertical-align: top;
@@ -76,9 +78,10 @@
 }
 
 .app_content {
-  float: left;
+  /* float: left;
   width: 1020px;
-  min-width: 1020px;
+  min-width: 1020px; */
+  flex: 1;
   min-height: 930px;
   margin-left: 10px;
   margin-right: 10px;
@@ -86,7 +89,7 @@
 }
 
 .app_banner {
-  float: left;
+  /* float: left; */
   width: 300px;
   min-width: 300px;
   vertical-align: top;
